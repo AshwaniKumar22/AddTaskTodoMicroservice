@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: add-task
+spec:
+  selector:
+    matchLabels:
+      app: add-task
+  template:
+    metadata:
+      labels:
+        app: add-task
+    spec:
+      containers:
+      - name: addtask-container
+        image: todoappacr2213.azurecr.io/addtask:v1
+        ports:
+        - containerPort: 8000
