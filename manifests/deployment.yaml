@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: addtask-container
-        image: todoappacr2213.azurecr.io/addtask:v1
+        image: todoappacr2213.azurecr.io/addtask:v2
         ports:
         - containerPort: 8000
         env:
