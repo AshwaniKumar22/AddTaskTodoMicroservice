@@ -7,7 +7,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: add-task-api.devopsai.online
+  - host: add-tasks-api.devopsai.online
     http:
       paths:
       - pathType: Prefix
